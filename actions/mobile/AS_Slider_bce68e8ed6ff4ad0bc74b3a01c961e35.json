@@ -1,0 +1,24 @@
+{
+    "AS_Slider_bce68e8ed6ff4ad0bc74b3a01c961e35": {
+        "id": "AS_Slider_bce68e8ed6ff4ad0bc74b3a01c961e35",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": null,
+            "KUID": "he16c5c508ed4892b27ba3c5bbae8ed8"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "AS_TitleBar_ba3d4433255e4ba2b7e1c138d727f1bd": {
+        "id": "AS_TitleBar_ba3d4433255e4ba2b7e1c138d727f1bd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT__a524113769504409b0c1b5a80fb78499",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_CONFIRMATION",
+            "alertTitle": "Light conditions",
+            "yesLabel": "OK.",
+            "noLabel": "Thanks!",
+            "alertMessage": "Light conditions succesfully measured!",
+            "messageType": "constant",
+            "parentId": null,
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT"
+        }]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "AS_Button_c735eb19f43f426d94a78cf800866866": {
+        "id": "AS_Button_c735eb19f43f426d94a78cf800866866",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": null,
+            "KUID": "he16c5c508ed4892b27ba3c5bbae8ed8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "IF_CONDITION_onClick_i9f3b2ef230e4d2aad15cd86b215f92d",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "varvalue",
+                "leftValue": "switchState",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "false"
+            }],
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY____a81eb54be6ae4943a4d355205ecb9e06",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Form1",
+            "propertyName": "text",
+            "propertyValue": "ON",
+            "itemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+            "widgetKUID": "a979695265684b56ad2663b897c50c7b",
+            "isSkinProperty": false,
+            "wType": "Button",
+            "forkedPlatform": "all",
+            "parentId": "IF_CONDITION_onClick_i9f3b2ef230e4d2aad15cd86b215f92d",
+            "callbackType": null
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY____ee59af1bcc5749ecb1a5d0aea5e11899",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Form1",
+            "propertyName": "skin",
+            "propertyValue": "ONskin",
+            "itemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+            "widgetKUID": "a979695265684b56ad2663b897c50c7b",
+            "skinKUID": "sf9f7814449948de806eb089231de856",
+            "isSkinProperty": true,
+            "wType": "Button",
+            "currentTheme": "defaultTheme",
+            "forkedPlatform": "all",
+            "parentId": "IF_CONDITION_onClick_i9f3b2ef230e4d2aad15cd86b215f92d",
+            "callbackType": null
+        }, {
+            "id": "ELSE_IF_CONDITION_onClick_aa5a4f3b1bc34e4a81bef47fb51d0aa7",
+            "type": "ELSE_IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "varvalue",
+                "leftValue": "switchState",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "true"
+            }],
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY____ia92decee189410b81104ae0b1d431b3",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Form1",
+            "propertyName": "text",
+            "propertyValue": "OFF",
+            "itemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+            "widgetKUID": "a979695265684b56ad2663b897c50c7b",
+            "isSkinProperty": false,
+            "wType": "Button",
+            "forkedPlatform": "all",
+            "parentId": "ELSE_IF_CONDITION_onClick_aa5a4f3b1bc34e4a81bef47fb51d0aa7",
+            "callbackType": null
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY____i113f1d1e3d74b1a970501f5e89d529f",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Form1",
+            "propertyName": "skin",
+            "propertyValue": "ONskin",
+            "itemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+            "widgetKUID": "a979695265684b56ad2663b897c50c7b",
+            "skinKUID": "sf9f7814449948de806eb089231de856",
+            "isSkinProperty": true,
+            "wType": "Button",
+            "currentTheme": "defaultTheme",
+            "forkedPlatform": "all",
+            "parentId": "ELSE_IF_CONDITION_onClick_aa5a4f3b1bc34e4a81bef47fb51d0aa7",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_onClick_b17bd7a9ee09419f94a19303ce07ffe6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(switchState == false) {\n  turnLightOn();\n}\nelse if(switchState == true) {\n  turnLightOff();\n}",
+            "callbackType": null
+        }]
+    }
+}
