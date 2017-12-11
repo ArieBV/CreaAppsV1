@@ -1,0 +1,147 @@
+{
+    "AS_Slider_df66f753663d4922b20cb9eb127c4998": {
+        "id": "AS_Slider_df66f753663d4922b20cb9eb127c4998",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "selectedvalue"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": null,
+            "KUID": "he16c5c508ed4892b27ba3c5bbae8ed8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "Form1.ONoff2.text",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "\"ON\"",
+                "leftItemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+                "leftWidgetKUID": "d963720f267a4c3991d1b09c521059bc"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "IF_CONDITION__c93487dd90e24f72a56364e7bb07fb2b",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "Form1.SliderBrightness.selectedValue",
+                "operator": "<",
+                "rightValueType": "value",
+                "rightValue": "100",
+                "leftItemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+                "leftWidgetKUID": "fb2b04cbd3904c129a3314a8762db17b"
+            }],
+            "parentId": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "IF_CONDITION__fe77a1668adb4477ae2989c237c38d29",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "Form1.SliderBrightness.selectedValue",
+                "operator": "<",
+                "rightValueType": "value",
+                "rightValue": "80",
+                "leftItemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+                "leftWidgetKUID": "fb2b04cbd3904c129a3314a8762db17b"
+            }],
+            "parentId": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "IF_CONDITION__b89122b99e45489bb1538bce7ea33ee5",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "Form1.SliderBrightness.selectedValue",
+                "operator": "<",
+                "rightValueType": "value",
+                "rightValue": "60",
+                "leftItemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+                "leftWidgetKUID": "fb2b04cbd3904c129a3314a8762db17b"
+            }],
+            "parentId": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "IF_CONDITION__b99f872049914eb19b838a062e4dc386",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "Form1.SliderBrightness.selectedValue",
+                "operator": "<",
+                "rightValueType": "value",
+                "rightValue": "40",
+                "leftItemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+                "leftWidgetKUID": "fb2b04cbd3904c129a3314a8762db17b"
+            }],
+            "parentId": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "IF_CONDITION__gd2d2e6c90e24c2a9fbce809e539754e",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "Form1.SliderBrightness.selectedValue",
+                "operator": "<",
+                "rightValueType": "value",
+                "rightValue": "20",
+                "leftItemKUID": "he16c5c508ed4892b27ba3c5bbae8ed8",
+                "leftWidgetKUID": "fb2b04cbd3904c129a3314a8762db17b"
+            }],
+            "parentId": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET__d36634d41f4a4fa3ae0863af5c1262dd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "adjustLight();",
+            "parentId": "IF_CONDITION__fa969e9b036c45e983e309863d6e4ba9",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__bb144abc45d344c391f86cff9d54e526",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "torchBrightness = 5;",
+            "parentId": "IF_CONDITION__c93487dd90e24f72a56364e7bb07fb2b",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__jdb9f4f03da54ed49c877aefb0a499c9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "torchBrightness = 4;",
+            "parentId": "IF_CONDITION__fe77a1668adb4477ae2989c237c38d29",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__aece9de16f7746e8a86d5aa8d7473e61",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "torchBrightness = 3;",
+            "parentId": "IF_CONDITION__b89122b99e45489bb1538bce7ea33ee5",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__j526030dfd5c4b43b5fa93adaf418fdb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "torchBrightness = 2;",
+            "parentId": "IF_CONDITION__b99f872049914eb19b838a062e4dc386",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__eff292204a2648b9b863eaa2b3cdb72b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "torchBrightness = 1;",
+            "parentId": "IF_CONDITION__gd2d2e6c90e24c2a9fbce809e539754e",
+            "callbackType": null
+        }]
+    }
+}

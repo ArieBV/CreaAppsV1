@@ -73,5 +73,26 @@ define({
         } else if (switchState == true) {
             turnLightOff();
         }
+    },
+    AS_Slider_df66f753663d4922b20cb9eb127c4998: function AS_Slider_df66f753663d4922b20cb9eb127c4998(eventobject, selectedvalue) {
+        var self = this;
+        if ((self.view.ONoff2.text == "ON")) {
+            if ((self.view.SliderBrightness.selectedValue < 100)) {
+                torchBrightness = 5;
+            }
+            if ((self.view.SliderBrightness.selectedValue < 80)) {
+                torchBrightness = 4;
+            }
+            if ((self.view.SliderBrightness.selectedValue < 60)) {
+                torchBrightness = 3;
+            }
+            if ((self.view.SliderBrightness.selectedValue < 40)) {
+                torchBrightness = 2;
+            }
+            if ((self.view.SliderBrightness.selectedValue < 20)) {
+                torchBrightness = 1;
+            }
+            adjustLight();
+        }
     }
 });

@@ -29,7 +29,7 @@
         "value": "50%"
     },
     "_step_": 1,
-    "_thickness_": 15,
+    "_thickness_": "20",
     "_top_": {
         "type": "string",
         "value": "387dp"
@@ -77,6 +77,7 @@
     "kuid": "fb2b04cbd3904c129a3314a8762db17b",
     "leftskin": "sb8f1459506b4136b754c4607128361a",
     "name": "kony.ui.Slider",
+    "onslide": "AS_Slider_df66f753663d4922b20cb9eb127c4998",
     "osPlatform": "iphone",
     "osVersion": "iOS7",
     "parent": "Form1",
